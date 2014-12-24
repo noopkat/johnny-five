@@ -115,4 +115,20 @@ exports["Fn"] = {
 
     test.done();
   },
+
+  int16fromtwobits: function(test) {
+    test.expect(4);
+
+    var a = Fn.int16(0, 0);
+    var b = Fn.int16(0, 1);
+    var c = Fn.int16(1, 4);
+    var d = Fn.int16(8, 0);
+
+    test.equal(a, 0);
+    test.equal(b, 1);
+    test.equal(c, 260);
+    test.equal(d, 2048);
+
+    test.done();
+  },
 };
