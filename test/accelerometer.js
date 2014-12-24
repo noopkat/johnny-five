@@ -294,9 +294,9 @@ exports["Accelerometer -- ADXL345"] = {
 
     test.ok(changeSpy.calledOnce);
     test.deepEqual(changeSpy.args[0], [{
-      x: 0.12,
-      y: 0.2,
-      z: 9.9
+      x: 0.012,
+      y: 0.02,
+      z: 1
     }]);
 
     test.done();
